@@ -1,0 +1,797 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.header .nav .logo a {
+    color: #ff305b;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.header .nav .content {
+    width: 50%;
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .nav ul a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.header .nav ul a.selected {
+    color: #ff305b;
+}
+
+.header .nav ul a:hover {
+    color: #ff305b;
+}
+
+.header .landing {
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.header .landing {
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.header .landing .land h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.header .landing .land h1 {
+    font-size: 70px;
+    color: #ff305b;
+    margin-bottom: 15px;
+}
+
+.header .landing .land h4 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* ----------------- End Of Header ------------- */
+
+
+/* ----------------- Start Of About ------------- */
+
+.about {
+    padding: 60px 0;
+}
+
+.about .about-section {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* .about .about-section .left{
+    width: calc(50% - (40px/2));
+} */
+
+.about .about-section .left img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.about .about-section .left .frame {
+    border: 8px solid #555;
+    border-radius: 8px;
+}
+
+.about .about-section .left .photo {
+    position: relative;
+    transform: translate(40px, 35px);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.about .about-section .left .photo .layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 120%;
+    right: 0;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.about .about-section .left .photo:hover .layer {
+    top: 0;
+}
+
+.about .about-section .left .photo .layer i {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.about .about-section .left .photo .layer i:hover {
+    color: #ff305b;
+}
+
+.about .about-section .right {
+    width: calc(50% - calc(40px/2));
+    padding: 20px 0 0 40px;
+}
+
+.about .about-section .right h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.about .about-section .right h2::after {
+    content: "";
+    background: #ff305b;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}
+
+.about .about-section .right p {
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #555;
+}
+
+.about .about-section .right ul {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.about .about-section .right ul li {
+    width: 50%;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.about .about-section .right ul li span {
+    font-weight: bold;
+    color: #333;
+}
+
+.about .about-section .right ul li span.email_span {
+    font-weight: 400;
+    color: #7E7E7E;
+}
+
+.about .about-section .right a {
+    background: #ff305b;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 15px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .about-section .right a:hover {
+    background: #EC2403;
+}
+
+/* ----------------- End Of About ------------- */
+
+/* ----------------- Start Of Services ------------- */
+
+.services {
+    padding: 60px 0;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.services h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.services h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.services .cards {
+    display: flex;
+    padding: 10px 0;
+    gap: 0px;
+}
+
+.services .cards .card {
+    width: calc(25% - calc(20px/2));
+    padding: 45px 10px;
+    transition: 0.5s;
+}
+
+.services .cards .card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.services .cards .card:hover i {
+    transform: scale(1.2, 1.2);
+}
+
+.services .cards .card i {
+    color: #ff305b;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.services .cards .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services .cards .card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+}
+
+/* ----------------- End Of Services ------------- */
+
+/* ----------------- Start Of Portfolio ------------- */
+
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.portfolio h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.portfolio h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.portfolio .btns button{
+    margin-right: 20px;
+    border: unset;
+    background-color: transparent;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.portfolio .btns button.selected{
+    color: #ff305b;
+}
+
+.portfolio .cards{
+    color: #ff305b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.portfolio .cards .frame{
+    width: calc(33% - calc(40px/2));
+    cursor: pointer;
+}
+
+.portfolio .cards .frame img{
+    display: block;
+    width: 100%;
+}
+
+.portfolio .cards .frame .photo{
+    position: relative;
+}
+
+.portfolio .cards .frame .layer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    visibility: hidden;
+}
+.portfolio .cards .frame .layer i{
+    margin: 0 20px 20px 0;
+    font-size: 20px;
+}
+
+.portfolio .cards .frame:hover .layer{
+   visibility: visible;
+}
+/* ----------------- End Of Portfolio ------------- */
+
+/* ----------------- Start Of Projects ------------- */
+
+.projects{
+    padding: 60px 0;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.projects .cards{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.projects .cards .card{
+    width: 25%;
+}
+
+.projects .cards .card i{
+    color: #ff305b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.projects .cards .card h3{
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+.projects .cards .card h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* ----------------- End Of Projects ------------- */
+
+/* ----------------- End Of Projects ------------- */
+.feedback{
+    padding: 80px 0;
+}
+.feedback h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.feedback h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.feedback h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.feedback .feedback-section{
+    width: 70%;
+    margin: auto;
+}
+
+.feedback .feedback-section .frame{
+    display: flex;
+    border-radius: 8px;
+    background: linear-gradient(139deg,rgba(255, 48, 91, 1) 22%, rgba(241, 241, 241, 1) 0%);
+    padding: 45px;
+    gap: 20px;
+}
+
+
+.feedback .feedback-section .frame .left{
+    width: 50%;
+}
+
+
+.feedback .feedback-section .frame img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.feedback .feedback-section .frame .right{
+    padding-left: 15px;
+}
+
+.feedback .feedback-section .frame .right h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.feedback .feedback-section .frame .right span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+}
+.feedback .feedback-section .frame .right span i{
+    font-size: 16px;
+    color: #777;
+}
+.feedback .feedback-section .frame .right p{
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555;
+}
+.feedback .feedback-section .frame .right i{
+   margin-right: 5px;
+    font-size: 16px;
+    color: #F1C30D;
+}
+
+/* ----------------- End Of Projects ------------- */
+
+/* ----------------- End Of Projects ------------- */
+.blog{
+    padding: 80px 0;
+    background-color: #F1F1F1;
+}
+.blog h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.blog h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.blog h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.blog .blog-section .cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog .blog-section .cards .card{
+    width: calc(33% - calc(40px/2));
+    background-color: #fff;
+}
+.blog .blog-section .cards .card img{
+    width: 100%;
+}
+
+.blog .blog-section .cards .card .card-content{
+    padding: 20px;
+}
+
+.blog .blog-section .cards .card .card-content h5{
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.blog .blog-section .cards .card .card-content h3{
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+.blog .blog-section .cards .card .card-content h3:hover{
+    color: #ff305b;
+}
+
+.blog .blog-section .cards .card .card-content p{
+    font-size: 17px;
+    color: #555;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.blog .blog-section .cards .card .card-content a{
+    font-size: 16px;
+    color: #333;
+    transition: 0.5s;
+}
+
+.blog .blog-section .cards .card .card-content a:hover{
+    color: #ff305b;
+}
+.blog .blog-section .cards .card .card-content i{
+margin-left: 5px;
+}
+
+
+/* ----------------- End Of Projects ------------- */
+
+/* ----------------- Start Of Contact ------------- */
+
+.contact{
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contact h2::after {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+
+.contact h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.contact .contact-section .data{
+    padding-top: 10px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contact .contact-section .data .name{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact .contact-section .data .name input{
+    width: 50%;
+}
+
+.contact .contact-section .data input::placeholder ,.contact .contact-section .data textarea{
+    color: #9999B3;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact .contact-section .data input , .contact .contact-section .data textarea{
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: 0.5;
+    margin-bottom: 25px;
+}
+
+.contact .contact-section .data textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.contact .contact-section .data .submit{
+    text-align: left;
+}
+
+.contact .contact-section .data .submit button{
+    background-color: #ff305b;
+    color: #ffffff;
+    opacity: 1;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+    padding: 15px 26px;
+    border: unset;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact .contact-section .data .submit button:hover{
+    background-color: #EC2403;
+}
+
+/* ----------------- End Of Contact ------------- */
+
+/* ----------------- Start Of Footer ------------- */
+
+
+
+/* ----------------- End Of Footer ------------- */
