@@ -48,7 +48,7 @@ h6 {
 
 .header .nav .logo a {
     color: #ff305b;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
 }
 
@@ -78,36 +78,32 @@ h6 {
 }
 
 .header .landing {
-    height: 80vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
 }
 
-.header .landing {
-    height: 70vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-}
 
 .header .landing .land h3 {
     font-size: 24px;
     color: #fff;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
 .header .landing .land h1 {
     font-size: 70px;
     color: #ff305b;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .header .landing .land h4 {
-    font-size: 26px;
+    font-size: 24px;
+    letter-spacing: 2px;
     color: #fff;
+    font-family: "Roboto";
     font-weight: 300;
 }
 
@@ -259,7 +255,7 @@ h6 {
 
 .services h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -349,7 +345,7 @@ h6 {
 
 .portfolio h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -486,7 +482,7 @@ h6 {
 }
 .feedback h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -583,7 +579,7 @@ h6 {
 }
 .blog h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -686,7 +682,7 @@ margin-left: 5px;
 
 .contact h2 {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -792,6 +788,36 @@ margin-left: 5px;
 
 /* ----------------- Start Of Footer ------------- */
 
+.footer{
+    background: #333333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer i{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 20px;cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer i:hover{
+    color: #ff305b;
+}
+
+.footer p{
+    color: #fff;
+    padding: 30px 0 0;
+}
+
+.footer span{
+    color: #ff305b;
+    cursor: pointer;
+}
+
+.footer span:hover{
+    text-decoration: underline;
+}
 
 
 /* ----------------- End Of Footer ------------- */
