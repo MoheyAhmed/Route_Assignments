@@ -1,0 +1,136 @@
+:root{
+    /* background colors */
+    /* --back-primary:#fff;
+    --back-secondry:#eee;
+    --back-third: #000;
+    --back-btn: #CE1212;
+    --back-btn-hover: #E61414; */
+    /* backgrounds  colors */
+    /* --dark-back-primary: #000;
+    --dark-back-secondry: #252525;
+    --dark-back-third: #202020;
+    --dark-back-btn: #C17E1F;
+    --dark-back-btn-hover: #D78C23; */
+    /* text colors  */
+    /* --color-default: #212529;
+    --color-secondary: #37373f;
+    --color-tertiary: #7f7f90;
+    --color-grey: #eee;
+    --color-light: #fff;
+    --color-black: #000;
+    --color-red: #CE1212;
+    --color-red-hover: #E61414; */
+    /* Fonts families */
+    --color-default: #212529;
+    --color-tertiary: #7f7f90;
+    --color-red: #CE1212;
+    --font-default: "Open Sans" , sans-serif;
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    font-family: var(--font-default);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 0 20px;
+}
+a {
+    text-decoration: none;
+}
+
+/* -------------------- Start of Nav ------------------ */
+
+nav{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+nav .nav{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav .logo a{
+    color: var(--color-default);
+    font-size: 1.875rem;
+    font-weight: 700;
+    position: relative;
+}
+
+nav .nav .logo a::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 70%;
+    background-color: var(--color-red);
+    position: absolute;
+}
+
+nav .nav .links a{
+    color: var(--color-tertiary);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding-bottom: 8px;
+    transition: 0.5s;
+    position: relative;
+}
+nav .nav .links a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-default);
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    transform-origin: left;
+}
+
+nav .nav .links a:hover:not(.selected)::after{
+    transform: scale(1);
+    transform-origin: left ;
+}
+
+nav .nav .links a:hover:not(.selected){
+    color: var(--color-default);
+}
+nav .nav .links a.selected{
+    color: var(--color-default);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--color-default);
+}
+
+nav .nav .icon input{
+   display: none;
+}
+
+nav .nav .icon i{
+   color: var(--color-default);
+   cursor: pointer;
+   font-size: 1.5625rem;
+}
+
+
+
+
+/* -------------------- End of Nav ------------------ */
