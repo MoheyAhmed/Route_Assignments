@@ -1,4 +1,4 @@
-:root{
+:root {
     /* background colors */
     /* --back-primary:#fff;
     --back-secondry:#eee;
@@ -21,10 +21,13 @@
     --color-red: #CE1212;
     --color-red-hover: #E61414; */
     /* Fonts families */
+    --color-white: #fff;
     --color-default: #212529;
     --color-tertiary: #7f7f90;
+    --color-grey: #eee;
     --color-red: #CE1212;
-    --font-default: "Open Sans" , sans-serif;
+    --back-btn-hover: #E61414;
+    --font-default: "Open Sans", sans-serif;
     --font-primary: "Amatic SC", sans-serif;
     --font-secondary: "Inter", sans-serif;
 }
@@ -36,7 +39,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -44,38 +47,51 @@ body {
     font-family: var(--font-default);
 }
 
-ul{
+body::selection {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+ul {
     list-style: none;
     display: flex;
 }
-li{
+
+li {
     margin: 0 20px;
 }
+
 a {
     text-decoration: none;
 }
 
 /* -------------------- Start of Nav ------------------ */
 
-nav{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5555;
+    background-color: var(--color-white);
 }
 
-nav .nav{
+nav .nav {
     padding: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .nav .logo a{
+nav .nav .logo a {
     color: var(--color-default);
     font-size: 1.875rem;
     font-weight: 700;
     position: relative;
 }
 
-nav .nav .logo a::after{
+nav .nav .logo a::after {
     content: '';
     width: 5px;
     height: 5px;
@@ -85,7 +101,7 @@ nav .nav .logo a::after{
     position: absolute;
 }
 
-nav .nav .links a{
+nav .nav .links a {
     color: var(--color-tertiary);
     font-size: 1.0625rem;
     font-weight: 600;
@@ -93,7 +109,8 @@ nav .nav .links a{
     transition: 0.5s;
     position: relative;
 }
-nav .nav .links a::after{
+
+nav .nav .links a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -106,31 +123,333 @@ nav .nav .links a::after{
     transform-origin: left;
 }
 
-nav .nav .links a:hover:not(.selected)::after{
+nav .nav .links a:hover:not(.selected)::after {
     transform: scale(1);
-    transform-origin: left ;
+    transform-origin: left;
 }
 
-nav .nav .links a:hover:not(.selected){
+nav .nav .links a:hover:not(.selected) {
     color: var(--color-default);
 }
-nav .nav .links a.selected{
+
+nav .nav .links a.selected {
     color: var(--color-default);
     padding-bottom: 6px;
     border-bottom: 2px solid var(--color-default);
 }
 
-nav .nav .icon input{
-   display: none;
+nav .nav .icon input {
+    display: none;
 }
 
-nav .nav .icon i{
-   color: var(--color-default);
-   cursor: pointer;
-   font-size: 1.5625rem;
+nav .nav .icon i {
+    color: var(--color-default);
+    cursor: pointer;
+    font-size: 1.5625rem;
 }
 
 
 
 
 /* -------------------- End of Nav ------------------ */
+
+/* -------------------- Start of Header ------------------ */
+header {
+    background-color: var(--color-grey);
+}
+
+header .landing {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0 30px 0;
+    flex-wrap: wrap;
+}
+
+header .landing .left {
+    width: 40%;
+}
+
+header .landing .left h2 {
+    font-size: 4.0625rem;
+    font-family: var(--font-primary);
+    letter-spacing: 2px;
+    color: var(--color-default);
+}
+
+header .landing .left p {
+    font-size: 1rem;
+    margin: 25px 0;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--color-tertiary);
+}
+
+header .landing .left a {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 15px 30px 30px 0;
+    transition: 0.5s;
+}
+
+header .landing .left a.btn-book {
+    padding: 12px 20px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 0 50px 50px 50px;
+}
+
+header .landing .left a.btn-book:hover {
+    background-color: var(--back-btn-hover);
+}
+
+header .landing .left a.btn-watch {
+    color: var(--color-default);
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+header .landing .left a.btn-watch::before {
+    content: '';
+    position: absolute;
+    width: 3.4375rem;
+    height: 3.4375rem;
+    border-radius: 50%;
+    left: -7px;
+    top: -5px;
+    background-image: linear-gradient(to right, var(--color-red) 0 50%, transparent 50% 100%);
+}
+
+header .landing .left a.btn-watch:hover {
+    color: var(--color-red);
+}
+
+header .landing .left a i {
+    margin-right: 10px;
+    position: relative;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+
+
+header .landing .right {
+    width: 45%;
+}
+
+header .landing img {
+    width: 95%;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+
+header .landing img:hover {
+    animation: shake 1s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px)
+    }
+
+    10% {
+        transform: translate(-1px, -2px)
+    }
+
+    20% {
+        transform: translate(-3px, 0px)
+    }
+
+    30% {
+        transform: translate(3px, 2px)
+    }
+
+    40% {
+        transform: translate(1px, -1px)
+    }
+
+    50% {
+        transform: translate(-1px, 2px)
+    }
+
+    60% {
+        transform: translate(-3px, 1px)
+    }
+
+    70% {
+        transform: translate(3px, 1px)
+    }
+
+    80% {
+        transform: translate(-1px, -1px)
+    }
+
+    90% {
+        transform: translate(1px, 2px)
+    }
+
+    100% {
+        transform: translate(1px, -2px)
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header .landing {
+        text-align: center;
+    }
+
+    header .landing .left {
+        order: 1;
+        width: 60%;
+        margin: auto;
+    }
+
+    header .landing .right {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* -------------------- End of Header ------------------ */
+
+/* -------------------- Start of Chefs ------------------ */
+
+section .chefs {
+    text-align: center;
+    padding: 60px 0;
+}
+
+section .chefs .head {
+    padding: 20px 0 50px;
+}
+
+section .chefs h2 {
+    font-size: .9375rem;
+    font-family: var(--font-secondary);
+    color: var(--color-tertiary);
+    font-weight: 500;
+}
+
+section .chefs h2+p {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 3.125rem;
+    color: var(--color-default);
+    font-family: var(--font-primary);
+}
+
+section .chefs h2+p span {
+    color: var(--color-red);
+}
+
+section .chefs .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section .chefs .cards .card {
+    width: calc(33% - calc(40px / 2));
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 0 0 20px 0;
+}
+
+section .chefs .cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+section .chefs .cards .card .photo .layer{
+    background-color: #ffffff4d;
+    position: absolute;
+    top: 10%;
+    right: -50px;
+    transition: 1s;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+section .chefs .cards .card .photo .layer i{
+    display: block;
+    margin: 10px 0;
+    color: #37373f66;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section .chefs .cards .card .photo:hover .layer{
+    right: 15px;
+}
+
+section .chefs .cards .card .photo .layer i:hover{
+    color: var(--color-tertiary);
+}
+
+section .chefs .cards .card .photo {
+    position: relative;
+    overflow: hidden;
+}
+
+section .chefs .cards .card .photo img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+section .chefs .cards .card .photo::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-image: url('../images/team-shape.svg');
+    width: 100%;
+    height: 3.75rem;
+}
+
+section .chefs .cards .card h3{
+    color: var(--color-default);
+    font-size: 1.17rem;
+    font-family: var(--font-secondary);
+}
+
+section .chefs .cards .card h5{
+    color: var(--color-tertiary);
+    font-size: .875rem;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+section .chefs .cards .card p{
+    color: var(--color-tertiary);
+    font-size: .9375rem;
+    /* width: 95%; */
+    /* margin: auto; */
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width:991px) {
+    section .chefs .cards .card {
+        width: calc(50% - calc(40px / 2));
+    }
+}
+
+@media screen and (max-width:768px) {
+    section .chefs .cards {
+        justify-content: center;
+        row-gap: 30px;
+    }
+    section .chefs .cards .card {
+        width: calc(100% - calc(40px / 2));
+    }
+}
+
+/* -------------------- End of Chefs ------------------ */
