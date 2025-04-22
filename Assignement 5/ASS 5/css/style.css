@@ -22,6 +22,8 @@
     --color-red-hover: #E61414; */
     /* Fonts families */
     --color-white: #fff;
+    --color-bg-white: #fff;
+    --color-nav-bg-white: #fff;
     --color-default: #212529;
     --color-tertiary: #7f7f90;
     --color-grey: #eee;
@@ -30,6 +32,17 @@
     --font-default: "Open Sans", sans-serif;
     --font-primary: "Amatic SC", sans-serif;
     --font-secondary: "Inter", sans-serif;
+}
+
+:root:has(.mode:checked) {
+    --color-nav-bg-white: #171717;
+    --color-default: #fff;
+    --color-grey: #252525;
+    --color-red: #C17E1F;
+    --back-btn-hover: #D78C23;
+    --color-white: #000;
+    --color-bg-white: #202020;
+    --color-tertiary: #9f9f9f;
 }
 
 * {
@@ -74,7 +87,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 5555;
-    background-color: var(--color-white);
+    background-color: var(--color-nav-bg-white);
 }
 
 nav .nav {
@@ -115,7 +128,7 @@ nav .nav .links a::after {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--color-default);
+    background-color: var(--color-red);
     bottom: 0;
     left: 0;
     transform: scale(0);
@@ -135,7 +148,7 @@ nav .nav .links a:hover:not(.selected) {
 nav .nav .links a.selected {
     color: var(--color-default);
     padding-bottom: 6px;
-    border-bottom: 2px solid var(--color-default);
+    border-bottom: 2px solid var(--color-red);
 }
 
 nav .nav .icon input {
@@ -311,12 +324,19 @@ header .landing img:hover {
         width: 100%;
         margin-bottom: 25px;
     }
+    header .landing .left a.btn-book {
+        border-radius: 50px 50px 50px 50px;
+    }
 }
 
 
 /* -------------------- End of Header ------------------ */
 
 /* -------------------- Start of Chefs ------------------ */
+
+.our_chefs{
+    background-color: var(--color-bg-white);
+}
 
 section .chefs {
     text-align: center;
@@ -415,6 +435,7 @@ section .chefs .cards .card .photo::before {
 }
 
 section .chefs .cards .card h3 {
+    margin-top: 20px;
     color: var(--color-default);
     font-size: 1.17rem;
     font-family: var(--font-secondary);
@@ -592,6 +613,7 @@ section .chefs .cards .card p {
         height: 1400px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .gallery .masonry {
         height: auto;
@@ -608,6 +630,7 @@ section .chefs .cards .card p {
 
 .contact {
     padding: 60px 0;
+    background-color: var(--color-bg-white);
 }
 
 .contact .head h2 {
@@ -633,21 +656,21 @@ section .chefs .cards .card p {
     color: var(--color-red);
 }
 
-.contact .details{
+.contact .details {
     display: flex;
     margin: 35px 0;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.contact .details .card{
+.contact .details .card {
     width: calc(50% - calc(30px / 2));
     padding: 25px 15px;
     display: flex;
     background-color: var(--color-grey);
 }
 
-.contact .details .card i{
+.contact .details .card i {
     font-size: 1rem;
     color: var(--color-white);
     padding: 15px;
@@ -656,43 +679,45 @@ section .chefs .cards .card p {
     background-color: var(--color-red);
 }
 
-.contact .details .card h3{
-    font-size:1.25rem;
+.contact .details .card h3 {
+    font-size: 1.25rem;
     color: var(--color-tertiary);
     font-family: var(--font-secondary);
     margin-bottom: 10px;
 }
 
-.contact .details .card p{
+.contact .details .card p {
     font-size: 1rem;
 }
 
-.contact .details .card p span{
+.contact .details .card p span {
     font-weight: bold;
 }
 
-.contact .form{
+.contact .form {
     padding-top: 10px;
     text-align: center;
     width: 95%;
     margin: auto;
     padding: 25px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.contact .form .input-group{
+.contact .form .input-group {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.contact .form input::placeholder ,.contact .form textarea::placeholder{
+.contact .form input::placeholder,
+.contact .form textarea::placeholder {
     color: #9999B3;
     letter-spacing: 1px;
 }
 
-.contact .form input , .contact .form textarea{
+.contact .form input,
+.contact .form textarea {
     display: block;
     width: 100%;
     height: 45px;
@@ -705,15 +730,17 @@ section .chefs .cards .card p {
     transition: 0.5;
     margin-bottom: 25px;
 }
-.contact .form .input-group input{
+
+.contact .form .input-group input {
     width: calc(50% - calc(20px /2));
 }
 
-.contact .form textarea{
-    height: 100px;;
+.contact .form textarea {
+    height: 100px;
+    resize: none;
 }
 
-.contact .form button{
+.contact .form button {
     background-color: var(--color-red);
     color: var(--color-white);
     transition: 0.3s ease-in-out;
@@ -725,19 +752,224 @@ section .chefs .cards .card p {
     letter-spacing: .125rem;
 }
 
-.contact .form button:hover{
+.contact .form button:hover {
     background-color: var(--back-btn-hover);
 }
 
-@media screen and (max-width:992px){
-    .contact .form .input-group input{
+@media screen and (max-width:992px) {
+    .contact .form .input-group input {
         width: calc(100% - calc(20px /2));
     }
 }
 
-@media screen and (max-width:768px){
-    .contact .details .card{
+@media screen and (max-width:768px) {
+    .contact .details .card {
         width: calc(100% - calc(30px / 2));
     }
 }
+
+/* -------------------- End of Contact ------------------ */
+
+/* -------------------- End of Contact ------------------ */
+
+.footer {
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url('../images/textured-metal-background.jpg');
+    color: #fff;
+}
+
+.footer .foot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .foot .right ul {
+    display: block;
+}
+
+.footer .foot .left,
+.footer .foot .right {
+    width: calc(25% - calc(10px));
+}
+
+.footer .foot .center {
+    width: calc(50% - calc(40px / 2));
+}
+
+.footer .foot .left .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer .foot .left .head img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer .foot .left .head h2 {
+    font-size: 1.875rem;
+    position: relative;
+}
+
+.footer .foot .left .head h2::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 70%;
+    background-color: var(--color-red);
+    position: absolute;
+}
+
+.footer .foot .left p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer .foot .left h3 {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid gray;
+    margin-bottom: 25px;
+}
+
+.footer .foot .left .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+}
+
+.footer .foot .center h3 {
+    margin-bottom: 20px;
+}
+
+.footer .foot .center p {
+    margin-bottom: 20px;
+}
+
+.footer .foot .center .subscription {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.footer .foot .center .subscription input {
+    width: 70%;
+    height: 35px;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.footer .foot .center .subscription button {
+    color: #fff;
+    border: unset;
+    padding: 10px 20px;
+    background-color: #CE1212;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer .foot .center .subscription button:hover {
+    background-color: #E61414;
+}
+
+
+.footer .foot .center ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.footer .foot .center ul li {
+    width: calc(50% - calc(80px /2));
+    transition: 0.5s;
+    padding: 5px 0px 5px 5px;
+}
+
+.footer .foot .center ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+.footer .foot .right h3 {
+    margin-bottom: 20px;
+}
+
+.footer .foot .right li {
+    margin-bottom: 20px;
+}
+
+.footer .foot .right i {
+    font-size: 1.375rem;
+    margin-right: 15px;
+    color: #CE1212;
+}
+
+
+@media screen and (max-width:1200px) {
+    .footer .foot .left {
+        order: 0;
+        width: 48%;
+    }
+
+    .footer .foot .center {
+        order: 2;
+        width: 100%;
+    }
+
+    .footer .foot .center .subscription input {
+        width: 80%;
+    }
+
+    .footer .foot .right {
+        order: 1;
+        width: 48%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .footer .foot {
+        justify-content: center;
+    }
+    .footer .foot .left {
+        order: 0;
+        width: 100%;
+    }
+
+    .footer .foot .center {
+        order: 1;
+        width: 100%;
+    }
+
+    .footer .foot .center .subscription input {
+        width: 75%;
+    }
+
+    .footer .foot .right {
+        order: 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .footer .foot .center .subscription {
+        flex-wrap: wrap;
+    }
+    .footer .foot .center .subscription input {
+        width: 100%;
+    }
+    .footer .foot .center .subscription button {
+        margin: 0;
+        margin-top: 15px;
+        width: 97%;
+    }
+
+}
+
 /* -------------------- End of Contact ------------------ */
