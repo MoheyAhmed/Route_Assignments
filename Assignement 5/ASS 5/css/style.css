@@ -366,7 +366,7 @@ section .chefs .cards .card:hover {
     transform: scale(1.1, 1.1);
 }
 
-section .chefs .cards .card .photo .layer{
+section .chefs .cards .card .photo .layer {
     background-color: #ffffff4d;
     position: absolute;
     top: 10%;
@@ -376,7 +376,7 @@ section .chefs .cards .card .photo .layer{
     padding: 15px;
 }
 
-section .chefs .cards .card .photo .layer i{
+section .chefs .cards .card .photo .layer i {
     display: block;
     margin: 10px 0;
     color: #37373f66;
@@ -384,11 +384,11 @@ section .chefs .cards .card .photo .layer i{
     cursor: pointer;
 }
 
-section .chefs .cards .card .photo:hover .layer{
+section .chefs .cards .card .photo:hover .layer {
     right: 15px;
 }
 
-section .chefs .cards .card .photo .layer i:hover{
+section .chefs .cards .card .photo .layer i:hover {
     color: var(--color-tertiary);
 }
 
@@ -414,20 +414,20 @@ section .chefs .cards .card .photo::before {
     height: 3.75rem;
 }
 
-section .chefs .cards .card h3{
+section .chefs .cards .card h3 {
     color: var(--color-default);
     font-size: 1.17rem;
     font-family: var(--font-secondary);
 }
 
-section .chefs .cards .card h5{
+section .chefs .cards .card h5 {
     color: var(--color-tertiary);
     font-size: .875rem;
     margin: 10px 0;
     font-weight: 500;
 }
 
-section .chefs .cards .card p{
+section .chefs .cards .card p {
     color: var(--color-tertiary);
     font-size: .9375rem;
     /* width: 95%; */
@@ -447,6 +447,7 @@ section .chefs .cards .card p{
         justify-content: center;
         row-gap: 30px;
     }
+
     section .chefs .cards .card {
         width: calc(100% - calc(40px / 2));
     }
@@ -454,11 +455,11 @@ section .chefs .cards .card p{
 
 /* -------------------- End of Chefs ------------------ */
 
-/* -------------------- End of Chefs ------------------ */
+/* -------------------- Start of Gallery ------------------ */
 
-.gallery{
+.gallery {
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     background-color: var(--color-grey);
 }
 
@@ -473,66 +474,201 @@ section .chefs .cards .card p{
 .gallery .head h2+p {
     text-transform: uppercase;
     margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 3.125rem;
     color: var(--color-default);
     font-family: var(--font-primary);
 }
+
 .gallery .head h2+p span {
     color: var(--color-red);
 }
-.gallery .masonry{
+
+
+.gallery .masonry {
+    --gap: 1.25rem;
+    height: 72.8125rem;
     display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    padding: 25px 0 0 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.25rem;
 }
-.gallery .masonry .card{
-    width: calc(33% - calc(40px / 2));
-}
-.gallery .masonry .photo{
-    margin-bottom: 25px;
+
+.gallery .masonry picture {
+    width: calc(calc(100% - var(--gap) * 2) / 3);
+    border: 4px solid #fff;
     position: relative;
     overflow: hidden;
-    border: 3px solid #fff;
 }
-.gallery .masonry .card .photo img{
+
+.gallery .masonry picture img {
     width: 100%;
-    display: block;
     transition: 0.5s;
 }
 
-.gallery .masonry .photo .layer{
+.gallery .masonry picture .layer {
+    width: 100%;
+    height: 100%;
+    padding: 0.9375rem;
+    background-color: #00000096;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
     display: flex;
+    flex-direction: column;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 120%;
-    bottom: 0;
-    background-color: #00000096;
+    color: #fff;
     transition: 0.5s;
-    padding: 0 15px;
 }
 
-.gallery .masonry .photo:hover .layer{
+.gallery picture .layer p {
+    color: #ddd;
+    text-align: center;
+}
+
+.gallery picture:hover img {
+    scale: 1.1;
+}
+
+.gallery picture:hover .layer {
     top: 0;
 }
-.gallery .masonry .photo:hover img{
-    transform: scale(1.1,1.1);
-}
-.gallery .masonry .photo .layer h2{
-   font-size: 1.5rem;
-   color: #fff;
-   align-self: center;
-   margin-bottom: 10px;
-}
-.gallery .masonry .photo .layer p{
-   font-size: 1rem;
-   color: #DDD;
+
+@media screen and (max-width: 1400px) {
+    .masonry {
+        height: 1000px;
+    }
 }
 
-/* -------------------- End of Chefs ------------------ */
+@media screen and (max-width: 1200px) {
+    .gallery .masonry {
+        height: 1000px;
+    }
+}
 
-/* -------------------- Start of Chefs ------------------ */
-/* -------------------- End of Chefs ------------------ */
+@media screen and (max-width: 992px) {
+    .gallery .masonry {
+        height: 1700px;
+    }
+
+    .gallery .masonry picture {
+        width: calc(calc(100% - var(--gap)) / 2);
+    }
+
+    .gallery .pizza {
+        order: 1;
+    }
+
+    .gallery .fried {
+        order: 6;
+    }
+
+    .gallery .omelette {
+        order: 4;
+    }
+
+    .gallery .kofta {
+        order: 7;
+    }
+
+    .gallery .burger {
+        order: 2;
+    }
+
+    .gallery .pizza-slices {
+        order: 3;
+    }
+
+    .gallery .steak {
+        order: 5;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .gallery .masonry {
+        height: 1400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallery .masonry {
+        height: auto;
+    }
+
+    .gallery .masonry picture {
+        width: 100%;
+    }
+}
+
+/* -------------------- End of Gallery ------------------ */
+
+/* -------------------- Start of Contact ------------------ */
+
+.contact {
+    padding: 60px 0 0 0;
+}
+
+.contact .head h2 {
+    text-align: center;
+    font-size: .9375rem;
+    font-family: var(--font-secondary);
+    color: var(--color-tertiary);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact .head h2+p {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 3.125rem;
+    color: var(--color-default);
+    font-family: var(--font-primary);
+}
+
+.contact .head h2+p span {
+    color: var(--color-red);
+}
+
+.contact .details{
+    display: flex;
+    margin: 35px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact .details .card{
+    width: calc(50% - calc(30px / 2));
+    padding: 25px 15px;
+    display: flex;
+    background-color: var(--color-grey);
+}
+
+.contact .details .card i{
+    font-size: 1rem;
+    color: var(--color-white);
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: var(--color-red);
+}
+
+.contact .details .card h3{
+    font-size:1.25rem;
+    color: var(--color-tertiary);
+    font-family: var(--font-secondary);
+    margin-bottom: 10px;
+}
+
+.contact .details .card p{
+    font-size: 1rem;
+}
+
+.contact .details .card p span{
+    font-weight: bold;
+}
+
+/* -------------------- End of Contact ------------------ */
