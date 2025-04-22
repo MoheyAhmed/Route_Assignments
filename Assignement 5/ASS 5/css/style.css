@@ -688,6 +688,7 @@ section .chefs .cards .card p {
 
 .contact .details .card p {
     font-size: 1rem;
+    color: var(--color-default);
 }
 
 .contact .details .card p span {
@@ -700,6 +701,7 @@ section .chefs .cards .card p {
     width: 95%;
     margin: auto;
     padding: 25px;
+    background-color: var(--color-nav-bg-white);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
