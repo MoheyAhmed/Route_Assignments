@@ -29,6 +29,7 @@
     --color-grey: #eee;
     --color-red: #CE1212;
     --right-pos:-100%;
+    --body-opacity : 1;
     --back-btn-hover: #E61414;
     --font-default: "Open Sans", sans-serif;
     --font-primary: "Amatic SC", sans-serif;
@@ -47,11 +48,15 @@
 }
 :root:has(.bar:checked){
     --right-pos:0;
+    --body-opacity : 0.5;
 }
 
 
 :root:has(.mode:checked) nav .icon .light-icon{
     display: inline;
+}
+:root:has(.mode:checked) section .chefs .cards .card .photo::before{
+    background-image: url('../images/team-shape-dark.svg');
 }
 
 :root:has(.mode:checked) nav .icon .mode-icon{
@@ -76,6 +81,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .container {
@@ -85,6 +91,7 @@
 
 body {
     font-family: var(--font-default);
+    opacity: var(--body-opacity);
 }
 
 body::selection {
@@ -226,10 +233,9 @@ nav .links .close-icon i{
         transition: 0.5s;
         top: 0;
         right: var(--right-pos);
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
         position: fixed;
         display: block;
-        
+        opacity: 1 !important;
     }
     nav .nav .links a.selected {
         color: var(--color-tertiary);
@@ -499,6 +505,7 @@ section .chefs .cards .card {
     border-radius: 8px;
     transition: 0.5s;
     padding: 0 0 20px 0;
+    background-color: var(--color-nav-bg-white);
 }
 
 section .chefs .cards .card:hover {
@@ -554,7 +561,6 @@ section .chefs .cards .card .photo::before {
 }
 
 section .chefs .cards .card h3 {
-    margin-top: 20px;
     color: var(--color-default);
     font-size: 1.17rem;
     font-family: var(--font-secondary);
