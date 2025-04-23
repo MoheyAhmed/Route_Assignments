@@ -29,7 +29,9 @@
     --color-grey: #eee;
     --color-red: #CE1212;
     --right-pos:-100%;
+    --static-heihgt : 0;
     --body-opacity : 1;
+    --static-layer : #ffffffb3;
     --back-btn-hover: #E61414;
     --font-default: "Open Sans", sans-serif;
     --font-primary: "Amatic SC", sans-serif;
@@ -49,6 +51,8 @@
 :root:has(.bar:checked){
     --right-pos:0;
     --body-opacity : 0.5;
+    --static-heihgt : 100vh;
+    /* --static-layer : #171717B2; */
 }
 
 
@@ -94,6 +98,18 @@ body {
     opacity: var(--body-opacity);
 }
 
+.static-div{
+    position: fixed;
+    height: var(--static-heihgt);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffffb3;
+    z-index: 4444;
+}
+
 body::selection {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -120,7 +136,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5555;
+    z-index: 99999;
     background-color: var(--color-nav-bg-white);
 }
 
@@ -224,6 +240,9 @@ nav .links .close-icon i{
         display: inline;
         color: var(--color-tertiary);
     }
+    nav .links .close-icon:hover{
+        color: #000;
+    }
 
     nav .nav .links ul {
         height: 100vh;
@@ -231,6 +250,7 @@ nav .links .close-icon i{
         padding: 0px 15px;
         background-color: #fff;
         transition: 0.5s;
+        z-index: 999999;
         top: 0;
         right: var(--right-pos);
         position: fixed;
