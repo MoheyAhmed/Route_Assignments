@@ -28,7 +28,7 @@
     --color-tertiary: #7f7f90;
     --color-grey: #eee;
     --color-red: #CE1212;
-    --right-pos:100%;
+    --right-pos:-100%;
     --back-btn-hover: #E61414;
     --font-default: "Open Sans", sans-serif;
     --font-primary: "Amatic SC", sans-serif;
@@ -45,6 +45,10 @@
     --color-bg-white: #202020;
     --color-tertiary: #9f9f9f;
 }
+:root:has(.bar:checked){
+    --right-pos:0;
+}
+
 
 :root:has(.mode:checked) nav .icon .light-icon{
     display: inline;
@@ -211,6 +215,7 @@ nav .links .close-icon i{
 
     nav .links .close-icon{
         display: inline;
+        color: var(--color-tertiary);
     }
 
     nav .nav .links ul {
@@ -226,13 +231,41 @@ nav .links .close-icon i{
         display: block;
         
     }
+    nav .nav .links a.selected {
+        color: var(--color-tertiary);
+        padding-bottom: 6px;
+        border-bottom: 2px solid var(--color-red);
+    }
+    nav .nav .links a.selected:hover {
+        color: #000;
+    }
     nav .nav .links ul li{
         margin: 30px 0;
     }
+    nav .nav .links a:hover:not(.selected)::after {
+        transform: scale(1);
+    }
+    nav .nav .links a:hover:not(.selected) {
+        color: #000;
+    }
+    
 }
-:root:has(.bar:checked) nav .nav .links ul {
-    right: 0;
+@media screen and (max-width:991px) {
+    nav .nav .links ul {
+        width: 40%;        
+    }
 }
+@media screen and (max-width:768px) {
+    nav .nav .links ul {
+        width: 70%;        
+    }
+}
+@media screen and (max-width:430px) {
+    nav .nav .links ul {
+        width: 90%;        
+    }
+}
+
 
 
 
@@ -396,6 +429,19 @@ header .landing img:hover {
     header .landing .right {
         width: 100%;
         margin-bottom: 25px;
+    }
+    header .landing .left a.btn-book {
+        border-radius: 50px 50px 50px 50px;
+    }
+}
+@media screen and (max-width: 580px) {
+
+    header .landing .left {
+        width: 100%;
+    }
+
+    header .landing .right {
+        width: 100%;
     }
     header .landing .left a.btn-book {
         border-radius: 50px 50px 50px 50px;
