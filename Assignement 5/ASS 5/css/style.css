@@ -45,6 +45,27 @@
     --color-tertiary: #9f9f9f;
 }
 
+:root:has(.mode:checked) nav .icon .light-icon{
+    display: inline;
+}
+
+:root:has(.mode:checked) nav .icon .mode-icon{
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #fff;
+    border-left: 2px solid #eee;
+    box-shadow: 0px 0px 21px 0px #0003 inset;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+    border-radius: 100vh;
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -159,6 +180,10 @@ nav .nav .icon i {
     color: var(--color-default);
     cursor: pointer;
     font-size: 1.5625rem;
+    margin-right: 15px;
+}
+nav .icon .light-icon{
+    display: none;
 }
 
 
