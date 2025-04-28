@@ -1,0 +1,469 @@
+:root {
+    --main-font: Arvo, sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --third-font: Montserrat, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--secondary-font);
+    line-height: 26px;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "iphone iphone head head"
+        "brand imac imac popular"
+        "games choice choice popular"
+        "connect experience display display";
+        height: fit-content;
+}
+
+.container>div>.content img {
+    width: 90%;
+}
+
+.container>div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden;
+}
+
+
+.iphone {
+    grid-area: iphone;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.head {
+    grid-area: head;
+    background-color: #f7f8f9;
+}
+
+.brand {
+    grid-area: brand;
+    background-color: #f05638;
+    color: #fffbfb;
+}
+
+
+.games {
+    grid-area: games;
+    background-color: #f7f8f9;
+}
+
+
+.connect {
+    grid-area: connect;
+    background-color: #38d5f4;
+    color: #fff;
+}
+
+.experience {
+    grid-area: experience;
+    background-color: #f7f8f9;
+}
+
+.display {
+    grid-area: display;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.iphone .content,
+.imac .content,
+.display .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 45%;
+}
+
+.iphone h4 {
+    font-family: var(--third-font);
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.iphone h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.iphone p {
+    color: #9fa3a7;
+}
+
+.head h4 {
+    font-family: var(--third-font);
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.head h1 {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    line-height: 60px;
+    font-weight: 400;
+    width: 70%;
+    margin: 25px auto;
+    color: #333;
+}
+
+.head a {
+    color: #27b9c2;
+}
+
+
+.brand h2 {
+    width: 70%;
+    margin: 20px auto;
+    font-family: var(--main-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.brand a {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffc80a;
+}
+
+
+.imac {
+    grid-area: imac;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.imac h4 {
+    font-family: var(--third-font);
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.imac h2 {
+    width: 70%;
+    margin: 20px 0 0 0;
+    font-family: var(--main-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+.imac img {
+    display: block;
+    width: 190% !important;
+    position: relative;
+    left: -120%;
+    top: 65px;
+}
+
+.imac p {
+    color: #9fa3a7;
+    margin: 0 0 20px 0;
+    line-height: 30px;
+}
+
+.imac a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+.games h2 {
+    width: 54%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 10px auto 20px;
+    font-family: var(--main-font);
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+.games img {
+    position: relative;
+    left: -7%;
+}
+
+.games a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+.choice {
+    grid-area: choice;
+    background-color: #93b6b7;
+    justify-self: flex-start;
+}
+
+.choice h5 {
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 20px 0 30px 20px;
+    background-color: #fa684f;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 20%;
+    /* align-self: end; */
+    color: #fff;
+}
+
+.choice h2 {
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 32px;
+}
+
+.choice .back {
+    padding-top: 40px;
+    background-image: url('../images/background.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.choice .back img {
+    position: relative;
+    left: -10%;
+    top: 20px;
+}
+
+
+.popular {
+    grid-area: popular;
+    background-color: #8f76bc;
+    color: #fff;
+}
+
+.popular .circle {
+    border-radius: 50%;
+    background-color: #8166b0;
+    padding: 50px;
+    margin: 0px 0 50px;
+}
+
+.popular .circle h4 {
+    width: fit-content;
+    margin: 0 auto 25px;
+    padding: 0px 25px;
+    border-radius: 60px;
+    background-color: #ffffff14;
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.popular .circle i {
+    color: #FFC80A;
+    font-size: 14px;
+}
+
+.popular .circle h5 {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.popular .circle img {
+    width: 100%;
+}
+
+.popular h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0 0 20px;
+    font-family: var(--main-font);
+}
+
+.popular p {
+    margin: 20px auto;
+    width: 80%;
+    line-height: 30px;
+}
+
+.popular a {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+
+
+.connect .content .circle {
+    border-radius: 50%;
+    background-color: #35CFED;
+    width: 240px;
+    height: 240px;
+    padding: 50px;
+}
+
+.connect .content .circle img {
+    width: 50%;
+}
+
+.connect .content .circle h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+
+.experience h5 {
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #7bc424;
+    color: #fff;
+    margin: 0 auto 30px;
+}
+
+
+.experience h2 {
+    margin: 15px auto 0;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.display h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 70%;
+}
+
+
+
+@media screen and (max-width:991px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "head head head head"
+            "iphone iphone iphone iphone"
+            "brand brand games games"
+            "imac imac imac imac"
+            "connect connect popular popular"
+            "choice choice popular popular"
+            "experience experience experience experience"
+            "display display display display";
+    }
+    .experience , .head , .imac , .games{
+        padding: 30px 0;
+    }
+    .popular{
+        padding: 50px;
+    }
+    .left {
+        width: 40%;
+    }
+    .right{
+        width: 40%;
+    }
+    .iphone{
+        padding-left: 40px;
+    }
+    .iphone .content{
+        justify-content: space-evenly !important;
+    }
+    .iphone img{
+        width: 70% !important;
+    }
+
+    .experience h2{
+        width: 100%;
+    }
+}
+
