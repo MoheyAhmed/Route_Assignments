@@ -1,1551 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Osaka</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/MOHEY.png" type="image/x-icon">
+    <title>DevFolio Bootstrap Portfolio Template - Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <link rel="stylesheet" href="css/all.min.css" />
+<body data-bs-spy="scroll" data-bs-target="#test">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <div class="landing">
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="head">
+                        <nav id="test" class="navbar navbar-expand-lg">
+                            <div class="container">
+                                <a class="navbar-brand" href="#">DevFolio</a>
+                                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="far fs-3 fa-bars text-white"></i>
+                                </button>
+                                <div class="collapse respon-links navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#services">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#portfolio">Work</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#blog">Blog</a>
+                                        </li>
+                                        <li class="nav-item drop-link">
+                                            <a class="nav-link" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">DropDown <i class="far fa-angle-down"></i></a>
+                                            <div class="drop bg-white">
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                                                    <li><a class="dropdown-item depth-link" href="#">Drop Down Down <i
+                                                                class="far fa-angle-right"></i></a>
+                                                        <div class="depth">
+                                                            <ul>
+                                                                <li><a class="dropdown-item" href="#">Drop Down Down
+                                                                        1</a></li>
+                                                                <li><a class="dropdown-item" href="#">Drop Down Down
+                                                                        2</a></li>
+                                                                <li><a class="dropdown-item" href="#">Drop Down Down
+                                                                        3</a></li>
+                                                                <li><a class="dropdown-item" href="#">Drop Down Down
+                                                                        4</a></li>
+                                                                <li><a class="dropdown-item" href="#">Drop Down Down
+                                                                        5</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                                                    <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                                                    <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top my-nav"
-    >
-      <div class="container">
-        <a class="navbar-brand text-uppercase fw-medium" href="#">Osaka</a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
 
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#testmonial">Testmonials</a>
-            </li>
-
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-          </ul>
+                <div id="home" class="row land">
+                    <div class="content">
+                        <h1>I am Morgan Freeman</h1>
+                        <p class="text-body">
+                            <span id="element"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
 
-    <header class="home" id="home">
-      <div class="container">
-        <div class="header-content text-white">
-          <h1 class="text-uppercase display-2 fw-bolder">robin steel</h1>
-          <p class="text-capitalize">Developer, Graphics & Web Design</p>
-          <a class="text-uppercase main-color pb-3 d-block" href=""
-            >view portfolio</a
-          >
+    <main>
+        <section>
+            <div id="about" class="about-services-section">
+                <div class="container">
+                    <div class="about">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 mb-5">
+                                <div class="left">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xm-12">
+                                            <img src="images/testimonial-2.jpg" class="mb-5" alt="morgan photo">
+                                        </div>
+                                        <div class="col-sm-8 col-xm-12">
+                                            <ul>
+                                                <li><span>Name: </span>Morgan Freeman</li>
+                                                <li><span>Profile: </span>full stack developer</li>
+                                                <li><span>Email: </span>contact@example.com</li>
+                                                <li><span>Phone: </span>(617) 557-0089</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 mt-5">
+                                            <h5>Skill</h5>
+                                            <h6 class="mt-4">HTML 85%</h6>
+                                            <div class="progress rounded-0" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="85" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 85%"></div>
+                                            </div>
+                                            <h6 class="mt-4">CSS3 75%</h6>
+                                            <div class="progress rounded-0" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 75%"></div>
+                                            </div>
+                                            <h6 class="mt-4">PHP 50%</h6>
+                                            <div class="progress rounded-0" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 50%"></div>
+                                            </div>
+                                            <h6 class="mt-4">JAVASCRIPT 90%</h6>
+                                            <div class="progress rounded-0" role="progressbar"
+                                                aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+                                                aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="right">
+                                    <h3>About me</h3>
+                                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu
+                                        erat,
+                                        accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
+                                        pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+                                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit
+                                        tortor
+                                        eget
+                                        felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum
+                                        sed
+                                        sit
+                                        amet dui. porttitor at sem.</p>
+                                    <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
+                                        elementum
+                                        id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget
+                                        tincidunt
+                                        nibh pulvinar a.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <ul class="list-unstyled d-flex gap-3">
-            <li class="header-icon">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="header-icon">
-              <a href="#">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            </li>
-            <li class="header-icon">
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="header-icon">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
 
-    <section class="about py-5" id="about">
-      <div class="container py-4">
-        <div class="main-title text-center">
-          <div class="title">
-            <h2 class="display-1 fw-bolder text-uppercase">ABOUT</h2>
-            <h3 class="text-uppercase display-2 fw-bolder">About</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="row g-4 pt-2 pt-lg-5 align-items-center">
-          <div class="col-lg-4 bg-img">
-            <div class="inner-img">
-              <div>
-                <img
-                  class="w-100"
-                  src="images/about-img.jpg"
-                  alt="about image"
-                />
-              </div>
+
+
+                    <div id="services" class="services pt-5 mt-4">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2>Services</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="line"></div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="far fa-briefcase"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Web Development</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="fas fa-clipboard-list-check"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Photography</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="far fa-analytics"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Responsive Design</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="fas fa-binoculars"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Graphic Design</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="fas fa-sun"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Marketing Services</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="frame">
+                                    <div class="top">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Web Design</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque
+                                            autem
+                                            fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-7 offset-lg-1">
-            <div class="inner">
-              <div>
-                <h2 class="text-capitalize display-5 fw-bolder">robin steel</h2>
-                <h4>
-                  Creative <span class="main-color">UI/UX</span> Designer,
-                  Developer.
-                </h4>
-                <p class="lead pb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Deleniti alias numquam officiis quis nam assumenda nihil esse
-                  veritatis error quibusdam fugit labore enim fugiat ex tenetur
-                  eveniet nesciunt molestias voluptate consequatur temporibus
-                  incidunt hic, eaque porro! Autem magnam nesciunt minus,
-                  expedita quia officiis similique perferendis consequuntur, in
-                  eos doloribus nostrum.
-                </p>
+        </section>
 
-                <span>
-                  Email:
-                  <a
-                    class="text-decoration-underline"
-                    href="mailto:ahmedreda@gmail.com"
-                    >ahmedreda4060@gmail.com</a
-                  >
-                </span>
-              </div>
+
+        <section>
+            <div class="projects">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="counter">
+                        <div class="row g-5 text-center">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="top">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3>450</h3>
+                                <h6>WORKS COMPLETED</h6>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="top">
+                                    <i class="fas fa-book-user"></i>
+                                </div>
+                                <h3>25</h3>
+                                <h6>YEARS OF EXPERIENCE</h6>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="top">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <h3>550</h3>
+                                <h6>TOTAL CLIENTS</h6>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="top">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3>48</h3>
+                                <h6>AWARD WON</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="testmonial" class="testmonial bg-light-grey py-5">
-      <div class="container py-4">
-        <div class="main-title text-center">
-          <div class="title">
-            <h2 class="display-1 fw-bolder text-uppercase">TESTMONIAL</h2>
-            <h3 class="text-uppercase display-2 fw-bolder">Testmonial</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
-        <div
-          id="testmonial-slider"
-          class="carousel slide w-75 mx-auto shadow rounded-2"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active text-center">
-              <div>
-                <img src="images/photos/one.jpg" class="chef-img" alt="..." />
-              </div>
-              <div class="chef border border-3 pt-5">
-                <div class="info">
-                  <h3 class="h6">Eyad Ramzy</h3>
-                  <h4 class="h6">Senior Chef</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit vel nesciunt aperiam accusamus quae sint saepe
-                    perferendis incidunt officia explicabo?
-                  </p>
+
+        <section>
+            <div id="portfolio" class="portfolio">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-12 text-center">
+                            <div class="top">
+                                <h2>Portfolio</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-1.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Lorem impsum dolor</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2018</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-2.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Loreda Cuno Nere</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2018</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-3.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Mavrito Lana Dere</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2018</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-4.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Bindo Laro Cado</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2018</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-5.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Studio Lena Mado</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2018</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow">
+                                <div class="card-top">
+                                    <img src="images/work-6.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5>Studio Big Bang</h5>
+                                        <p><span class="text-primary">Web Design</span> / 18 Sep. 2017</p>
+                                    </div>
+                                    <div>
+                                        <a href="#"><i
+                                                class="fal fs-4 fa-plus text-primary rounded-circle p-2 border border-2 border-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="carousel-item text-center">
-              <div>
-                <img src="images/photos/two.png" class="chef-img" alt="..." />
-              </div>
-              <div class="chef border border-3 pt-5">
-                <div class="info">
-                  <h3 class="h6">Eyad Ramzy</h3>
-                  <h4 class="h6">Senior Chef</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit vel nesciunt aperiam accusamus quae sint saepe
-                    perferendis incidunt officia explicabo?
-                  </p>
+        </section>
+
+
+        <section>
+            <div id="testimonial" class="testimonial py-5">
+                <div class="overlay"></div>
+                <div class="container mx-auto w-75 py-5 mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="inner">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item text-center active">
+                                            <img class="shadow rounded-circle mb-2" src="images/testimonial-2.jpg"
+                                                alt="...">
+                                            <h4>Xavi Alonso</h4>
+                                            <p class="mx-auto lead mb-4"> Curabitur arcu erat, accumsan id imperdiet et,
+                                                porttitor at sem. Lorem
+                                                ipsum dolor sit amet,consectetur adipiscing elit.
+                                            </p>
+                                        </div>
+                                        <div class="carousel-item text-center">
+                                            <img class="shadow rounded-circle mb-2 second-img"
+                                                src="images/testimonial-4.jpeg" alt="...">
+                                            <h4>Marta Socrate</h4>
+                                            <p class="mx-auto lead mb-4"> Curabitur arcu erat, accumsan id imperdiet et,
+                                                porttitor at sem. Lorem
+                                                ipsum dolor sit amet,consectetur adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-indicators position-static">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="carousel-item text-center">
-              <div>
-                <img src="images/photos/three.jpg" class="chef-img" alt="..." />
-              </div>
-              <div class="chef border border-3 pt-5">
-                <div class="info">
-                  <h3 class="h6">Eyad Ramzy</h3>
-                  <h4 class="h6">Senior Chef</h4>
-                  <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit vel nesciunt aperiam accusamus quae sint saepe
-                    perferendis incidunt officia explicabo?
-                  </p>
+        </section>
+
+
+        <section>
+            <div class="blog py-5" id="blog">
+                <div class="container py-3">
+                    <div class="row g-5">
+                        <div class="col-12 text-center">
+                            <div class="top">
+                                <h2>Blog</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-top">
+                                    <img src="images/post-1.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body position-relative">
+                                    <div class="box">
+                                        <h5 class="card-title badge text-bg-primary rounded-1 ">TRAVEL</h5>
+                                    </div>
+                                    <h3 class="h6">See more ideas about Travel</h3>
+                                    <p class="card-text lead">Proin eget tortor risus. Pellentesque in ipsum id orci
+                                        porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non
+                                        nisi.</p>
+                                </div>
+                                <div class="card-footer d-flex flex-wrap justify-content-between align-items-center">
+                                    <div>
+                                        <img src="images/testimonial-2.jpg" alt="...">
+                                        <span class="name">Morgan Freeman</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <i class="fal fa-clock"></i>
+                                        <span>10 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-top">
+                                    <img src="images/post-2.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body position-relative">
+                                    <div class="box">
+                                        <h5 class="card-title badge text-bg-primary rounded-1 ">WEB DESIGN</h5>
+                                    </div>
+                                    <h3 class="h6">See more ideas about Travel</h3>
+                                    <p class="card-text lead">Proin eget tortor risus. Pellentesque in ipsum id orci
+                                        porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non
+                                        nisi.</p>
+                                </div>
+                                <div class="card-footer d-flex flex-wrap  justify-content-between align-items-center">
+                                    <div>
+                                        <img src="images/testimonial-2.jpg" alt="...">
+                                        <span class="name">Morgan Freeman</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <i class="fal fa-clock"></i>
+                                        <span>10 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-top">
+                                    <img src="images/post-3.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body position-relative">
+                                    <div class="box">
+                                        <h5 class="card-title badge text-bg-primary rounded-1 ">WEB DESIGN</h5>
+                                    </div>
+                                    <h3 class="h6">See more ideas about Travel</h3>
+                                    <p class="card-text lead">Proin eget tortor risus. Pellentesque in ipsum id orci
+                                        porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non
+                                        nisi.</p>
+                                </div>
+                                <div class="card-footer d-flex flex-wrap  justify-content-between align-items-center">
+                                    <div>
+                                        <img src="images/testimonial-2.jpg" alt="...">
+                                        <span class="name">Morgan Freeman</span>
+                                    </div>
+
+                                    <div class="time">
+                                        <i class="fal fa-clock"></i>
+                                        <span>10 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <div class="carousel-indicators position-static">
-            <button
-              type="button"
-              data-bs-target="#testmonial-slider"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            >
-              <img src="images/photos/one.jpg" alt="" />
-            </button>
-            <button
-              type="button"
-              data-bs-target="#testmonial-slider"
-              data-bs-slide-to="1"
-              aria-current="true"
-              aria-label="Slide 2"
-            >
-              <img src="images/photos/two.png" alt="" />
-            </button>
 
-            <button
-              type="button"
-              data-bs-target="#testmonial-slider"
-              data-bs-slide-to="2"
-              aria-current="true"
-              aria-label="Slide 3"
-            >
-              <img src="images/photos/three.jpg" alt="" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="services py-5">
-      <div class="container py-4">
-        <div class="main-title text-center">
-          <div class="title">
-            <h2 class="display-1 fw-bolder text-uppercase">SERVICES</h2>
-            <h3 class="text-uppercase display-2 fw-bolder">Services</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div
-          class="row justify-content-center g-4 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"
-        >
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
+        <section>
+            <div id="contact" class="contact shadow py-4">
+                <div class="overlay"></div>
+                <div class="container position-relative mx-auto bg-white shadow-lg p-5 my-5">
+                    <div class="row g-5">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="top">
+                                <h3>Send Message Us</h3>
+                                <div class="line"></div>
+                            </div>
+                            <div class="data text-center">
+                                <form action="">
+                                    <input type="email" class="form-control form-control-md my-4 rounded-0"
+                                        id="exampleFormControlInput1" placeholder="Your Name">
+                                    <input type="email" class="form-control form-control-md my-4 rounded-0"
+                                        id="exampleFormControlInput1" placeholder="Your Email">
+                                    <input type="email" class="form-control form-control-md my-4 rounded-0"
+                                        id="exampleFormControlInput1" placeholder="Subject">
+                                    <textarea class="form-control form-control-md my-4 rounded-0" placeholder="Message"
+                                        id="exampleFormControlTextarea1" rows="5"></textarea>
+                                    <button type="submit"
+                                        class="btn btn-primary py-2 px-4 fs-5 mb-3 my-4 rounded-pill">Send
+                                        Message</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="top">
+                                <h3>Get in Touch</h3>
+                                <div class="line"></div>
+                            </div>
+                            <div class="content my-4">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum
+                                    dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet?
+                                    Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> 329 WASHINGTON ST BOSTON, MA 02108
+                                        </li>
+                                        <li>
+                                            <i class="far fa-mobile"></i> (617) 557-0089
+                                        </li>
+                                        <li>
+                                            <i class="far fa-envelope"></i> contact@example.com
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
+        </section>
+
+
+        <footer class="py-4">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5>© Copyright <span>DevFolio</span>. All Rights Reserved</h5>
+                        <p>Designed by BootstrapMade</p>
+                    </div>
                 </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="images/portfolio/1.jpg"
-                alt="Title"
-              />
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="badge bg-info">All level</span>
-                  <i class="fas fa-heart text-danger"></i>
-                </div>
-
-                <h3 class="h5 my-3">Sketch from A to Z: for app designer</h3>
-
-                <p class="text-muted">
-                  Proposal indulged no do sociable he throwing setting.
-                </p>
-
-                <div class="d-flex flex-wrap">
-                  <div class="rating-avg">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half text-warning"></i>
-                  </div>
-
-                  <span>4.0/5.0</span>
-                </div>
-              </div>
-
-              <div
-                class="card-footer d-flex flex-wrap justify-content-between align-items-center"
-              >
-                <div>
-                  <i class="far fa-clock text-danger me-1"></i>
-                  <span>12h 56m</span>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-table-cells-large text-info me-1"></i>
-                  <span>15 lectures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="services" class="services py-5">
-      <div class="container py-4">
-        <div class="main-title text-center pb-4">
-          <div class="title">
-            <h2 class="display-1 fw-bolder text-uppercase">SERVICES</h2>
-            <h3 class="text-uppercase display-2 fw-bolder">Services</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <ul
-          class="nav nav-pills mb-3 bg-info d-flex flex-wrap justify-content-center py-2 rounded-2"
-          id="pills-tab"
-          role="tablist"
-        >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-web-design-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-web-design"
-              type="button"
-              role="tab"
-              aria-controls="pills-web-design"
-              aria-selected="true"
-            >
-              Web Design
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-development-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-development"
-              type="button"
-              role="tab"
-              aria-controls="pills-development"
-              aria-selected="false"
-            >
-              Development
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-graphic-design-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-graphic-design"
-              type="button"
-              role="tab"
-              aria-controls="pills-graphic-design"
-              aria-selected="false"
-            >
-              Graphic Design
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-web-design"
-            role="tabpanel"
-            aria-labelledby="pills-web-design-tab"
-            tabindex="0"
-          >
-            <div
-              class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
-            >
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/1.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/2.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/3.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/4.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/5.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/6.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/7.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/8.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-development"
-            role="tabpanel"
-            aria-labelledby="pills-development-tab"
-            tabindex="0"
-          >
-            <div
-              class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
-            >
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/1.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/3.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/5.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/7.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/8.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-graphic-design"
-            role="tabpanel"
-            aria-labelledby="pills-graphic-design-tab"
-            tabindex="0"
-          >
-            <div
-              class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
-            >
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/1.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/3.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="images/portfolio/7.jpg"
-                    alt="Title"
-                  />
-                  <div class="card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <span class="badge bg-info">All level</span>
-                      <i class="fas fa-heart text-danger"></i>
-                    </div>
-
-                    <h3 class="h5 my-3">
-                      Sketch from A to Z: for app designer
-                    </h3>
-                    <p class="text-muted">
-                      Proposal indulged no do sociable he throwing setting.
-                    </p>
-
-                    <div class="d-flex flex-wrap align-items-center">
-                      <div class="rating-avg me-2">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half text-warning"></i>
-                      </div>
-                      <span>4.0/5.0</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-footer d-flex justify-content-between align-items-center flex-wrap"
-                  >
-                    <div>
-                      <i class="far fa-clock text-danger me-1"></i>
-                      <span>12h 56m</span>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-solid fa-table-cells-large text-info me-1"
-                      ></i>
-                      <span>15 lectures</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+        </footer>
+    </main>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
