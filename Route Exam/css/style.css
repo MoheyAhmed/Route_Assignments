@@ -123,6 +123,9 @@ nav ul>li>.nav-link.active::after {
         margin-bottom: 10px;
         margin-left: 0 !important;
     }
+    nav ul>li>.nav-link.active::after{
+        width: 0;
+    }
 }
 
 /* ------------------------- End Nav ----------------- */
@@ -399,6 +402,11 @@ nav ul>li>.nav-link.active::after {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .home .content h4{
+        left: -50px;
+    }
+}
 /* ------------------------- End Home ----------------- */
 
 /* ------------------------- End About ----------------- */
@@ -509,6 +517,31 @@ nav ul>li>.nav-link.active::after {
 
 
 /* ------------------------- End Portfolio ----------------- */
+
+
+/* ------------------------- End Portfolio ----------------- */
+.testimonial .inner{
+    width: 95%;
+}
+.testimonial .inner img{
+    width: 90px;
+    height: 90px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bs-carousel-indicator-active-bg);
+}
+
+/* ------------------------- End Portfolio ----------------- */
+
+/* ------------------------- End Projects ----------------- */
+
+.projects .inner h3{
+    font-weight: 900;
+}
+
+/* ------------------------- End Projects ----------------- */
 
 
 
