@@ -152,7 +152,7 @@ nav ul>li>.nav-link.active::after {
     position: absolute;
     font-weight: 600;
     margin-left: 10px;
-    animation: typing 4s linear infinite;
+    animation: typing 6s linear infinite;
 }
 
 
@@ -505,6 +505,13 @@ nav ul>li>.nav-link.active::after {
     opacity: 0;
     transition: 0.5s;
 }
+.portfolio .inner .overlay .icons i:hover{
+    cursor: pointer;
+    background-color: #fff !important;
+    color: #111111 !important;
+    border: 1px solid #111111;
+    transition: 0.5s;
+}
 .portfolio .inner:hover .overlay{
     opacity: 1;
     transform: translateY(0px);
@@ -569,6 +576,7 @@ nav ul>li>.nav-link.active::after {
 }
 .team .inner .overlay .icons i{
     transition: 0.5s;
+    font-size: 1.4rem;
    cursor: pointer;
 }
 .team .inner .overlay .icons i:hover{
@@ -577,11 +585,19 @@ nav ul>li>.nav-link.active::after {
 }
 /* ------------------------- End Projects ----------------- */
 
+/* ------------------------- End Projects ----------------- */
+.contact .inner:hover i{
+    background-color: #111 !important;
+    transition: 0.5s;
+    color: #fff !important;
+}
+/* ------------------------- End Projects ----------------- */
 
 
 
 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:1150px) {
     .container{
         width: 95% ;
     }
