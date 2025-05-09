@@ -543,6 +543,40 @@ nav ul>li>.nav-link.active::after {
 
 /* ------------------------- End Projects ----------------- */
 
+/* ------------------------- End Projects ----------------- */
+.team .inner{
+    background-color: rgba(52, 52, 52, .8);
+}
+.team .inner img{
+    transition: 0.5s;
+}
+.team .inner .overlay{
+    background-color: rgba(255, 255, 255, 0.95);
+    inset: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.team .inner:hover .overlay{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.team .inner:hover img{
+    transform: scale(1.2,1.2);
+}
+.team .inner .overlay .icons{
+   top: 50px;
+}
+.team .inner .overlay .icons i{
+    transition: 0.5s;
+   cursor: pointer;
+}
+.team .inner .overlay .icons i:hover{
+   background-color: #fff !important;
+   color: #111111;
+}
+/* ------------------------- End Projects ----------------- */
+
 
 
 
