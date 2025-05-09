@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
     var scroll = this.scrollY;
-    if (scroll > 500) {
+    if (scroll > 300) {
         document.getElementById("nav-scroll").classList.add("second_nav");
     } else {
         document.getElementById("nav-scroll").classList.remove("second_nav");
