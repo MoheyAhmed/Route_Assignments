@@ -10,14 +10,14 @@ $("document").ready(function () {
     //     loop: true,
     // }).go();
 
-    new TypeIt("#element", { 
-        lifeLike: false, 
+    new TypeIt("#element", {
+        lifeLike: false,
         loop: true,
-        typeSpeed: 500,
+        speed: 10,
         backSpeed: 500,
         speed: 45
     })
-        .delete(9, {instant: true})
+        .delete(9, { instant: true })
         .type("D")
         .pause(272)
         .type("e")
@@ -175,8 +175,39 @@ $("document").ready(function () {
         .delete(1)
         .go();
 
-// -------------------------------------------------------
+    // -------------------------------------------------------
 
+    window.addEventListener("scroll", function () {
+        var scroll = this.scrollY;
+        if (scroll > 250) {
+            document.getElementById("second_nav").classList.add("second_nav");
+            // document.getElementById("dropdown").style.right = "120px"
+            // document.getElementById("dropdown").style.top = "55px"
+        } else {
+            document.getElementById("second_nav").classList.remove("second_nav");
+            // document.getElementById("dropdown").style.right = "0px"
+            // document.getElementById("dropdown").style.top = "70px"
+        }
+    });
+
+
+    window.addEventListener("scroll", function (event) {
+        var scroll = this.scrollY;
+        if (scroll > 150) {
+            this.document.getElementById("top").style.display = "block";
+        } else {
+            this.document.getElementById("top").style.display = "none";
+        }
+    });
+
+    document.getElementById("top").addEventListener("click",function(){
+    window.scroll({
+        top:0,
+        left:0,
+        behavior: 'smooth',
+    })
+})
 
 })
+
 
