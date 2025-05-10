@@ -585,13 +585,36 @@ nav ul>li>.nav-link.active::after {
 }
 /* ------------------------- End Projects ----------------- */
 
-/* ------------------------- End Projects ----------------- */
+/* ------------------------- Start Contact ----------------- */
 .contact .inner:hover i{
     background-color: #111 !important;
     transition: 0.5s;
     color: #fff !important;
 }
-/* ------------------------- End Projects ----------------- */
+
+.contact input , .contact textarea{
+    background-color: #f4f4f4;
+}
+.contact input:focus , .contact textarea:focus{
+    background-color: #f4f4f4 !important;
+   box-shadow: unset !important;
+}
+.contact input::placeholder , .contact textarea::placeholder{
+    color: #748182;
+    letter-spacing: 1px;
+}
+.contact button:hover{
+    background-color: #fff !important;
+    color: #111 !important;
+    border: 1px solid #111;
+}
+/* ------------------------- End Contact ----------------- */
+
+/* ------------------------- End Contact ----------------- */
+footer{
+    background-color: #1c1c1c ;
+}
+/* ------------------------- End Contact ----------------- */
 
 
 
@@ -599,6 +622,6 @@ nav ul>li>.nav-link.active::after {
 
 @media screen and (max-width:1150px) {
     .container{
-        width: 95% ;
+        width: 95% !important;
     }
 }
