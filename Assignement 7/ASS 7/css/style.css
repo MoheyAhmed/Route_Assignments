@@ -21,19 +21,37 @@ ul{
     background-size: cover;
     background-attachment: fixed;
 }
+.top{
+    bottom: 15px;
+    right: 15px;
+    display: none;
+    z-index: 456454;
+    cursor: pointer;
+}
+.top .inner{
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #0062d3;
+}
 
 .landing .header{
     display: flex;
     flex-direction: column;
 }
 .landing .header nav{
-    background: rgba(0, 0, 0, 0.9);
+    background-color: transparent;
+    /* background: rgba(0, 0, 0, 0.9); */
     padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+}
+
+.landing .header .second_nav{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 8px 0 !important;
 }
 
 .landing .header button{
@@ -54,7 +72,7 @@ ul{
     transition: 0.5s ease-in-out;
 }
 
-.landing .header .head a:not(.navbar-brand)::before{
+.landing .header .head a:not(.navbar-brand)::after{
     content: '';
     position: absolute;
     width: 0%;
@@ -63,18 +81,14 @@ ul{
     left: 6px;
     background-color: #fff;
     transition: 0.5s;
-    /* transform: scale(0);
-    transform-origin: left; */
 }
-.landing .header .head a:not(.navbar-brand):hover::before{
-    /* transform: scale(1);
-    transform-origin: left; */
-    width: 70%;
+.landing .header .head a:not(.navbar-brand):hover::after{
+    width: 70% !important;
 }
 .nav-link.active::after{
     content: '';
     position: absolute;
-    width: 70%;
+    width: 70% !important;
     height: 2px;
     bottom: 0;
     left: 6px;
@@ -83,11 +97,6 @@ ul{
     /* transform: scale(1);
     transform-origin: left; */
 }
-
-/* .droplink{
-    position: relative;
-} */
-
 .landing .header .head .drop{
     position: absolute;
     padding: 10px 50px 10px 0px;
@@ -525,7 +534,7 @@ ul{
 .blog .card .box h5 {
     text-transform: uppercase;
     font-size: .7rem;
-    letter-spacing: .1008px;
+    /* letter-spacing: .1008px; */
     font-weight: 500;
     padding: 10px 15px;
 }
