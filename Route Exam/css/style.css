@@ -24,8 +24,7 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
     color: var(--secondary-color);
     font-family: "Montserrat", sans-serif;
 }
@@ -34,13 +33,13 @@ h6
     font-family: "Montserrat", sans-serif;
 }
 
-.tittle{
+.tittle {
     color: var(--secondary-color);
     font-size: 2.5rem;
     font-weight: 900;
 }
 
-.tittle h2::after{
+.tittle h2::after {
     content: "";
     width: 30%;
     height: 30px;
@@ -51,10 +50,60 @@ h6
     left: 35%;
     z-index: -1;
 }
-.tittle h2{
-    font-size: 40px !important  ;
+
+.tittle h2 {
+    font-size: 40px !important;
     z-index: 44;
 }
+
+/* ------------------------- Start Loading --------------- */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999999999;
+}
+.loading::after, .loading::before {
+    content: "";
+    background: #fff;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+}
+.end::after {
+    top: -60%;
+}
+.loading:before {
+  bottom: 0;
+}
+.loading::after {
+    top: 0;
+}
+.loading .circle-load {
+    margin: 50vh auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #e8e8e8;
+    border-top: 10px solid #000;
+    animation: rotate 1.2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------- End Loading --------------- */
 
 /* ------------------------- Start Nav --------------- */
 
@@ -77,20 +126,23 @@ nav ul>li>.nav-link.active::after {
     width: 70%;
 }
 
-.second_nav{
+.second_nav {
     background-color: #fff;
     color: #111111 !important;
     padding: 0 auto;
     height: 60px;
     transition: 0.5s;
     box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
-    a{
+
+    a {
         color: #111111 !important;
     }
-    ul>li>.nav-link::after{
+
+    ul>li>.nav-link::after {
         background-color: #111111;
     }
-    button i{
+
+    button i {
         color: #111111 !important;
     }
 }
@@ -123,7 +175,8 @@ nav ul>li>.nav-link.active::after {
         margin-bottom: 10px;
         margin-left: 0 !important;
     }
-    nav ul>li>.nav-link.active::after{
+
+    nav ul>li>.nav-link.active::after {
         width: 0;
     }
 }
@@ -403,10 +456,11 @@ nav ul>li>.nav-link.active::after {
 }
 
 @media screen and (min-width: 768px) {
-    .home .content h4{
+    .home .content h4 {
         left: -50px;
     }
 }
+
 /* ------------------------- End Home ----------------- */
 
 /* ------------------------- End About ----------------- */
@@ -425,6 +479,7 @@ nav ul>li>.nav-link.active::after {
     background-image: url('../images/dots.png');
     background-repeat: repeat;
 }
+
 .about .about-img .hero img {
     z-index: 44;
 }
@@ -456,14 +511,16 @@ nav ul>li>.nav-link.active::after {
 
 /* ------------------------- End Services ----------------- */
 
-.services .card{
+.services .card {
     padding: 40px 20px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
 }
-.services .card i{
+
+.services .card i {
     padding: 25px;
 }
-.services .card:hover i{
+
+.services .card:hover i {
     background-color: #111111 !important;
     color: #fff !important;
     transition: 0.5s;
@@ -473,11 +530,12 @@ nav ul>li>.nav-link.active::after {
 
 /* ------------------------- Start Portfolio ----------------- */
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: transparent;
 }
 
-.nav-pills .nav-link::after{
+.nav-pills .nav-link::after {
     content: "";
     width: 0;
     height: 2px;
@@ -488,14 +546,15 @@ nav ul>li>.nav-link.active::after {
     transition: all 0.4s;
 }
 
-.nav-pills .nav-link.active::after{
+.nav-pills .nav-link.active::after {
     width: 90%;
 }
 
-.portfolio .inner{
+.portfolio .inner {
     overflow: hidden;
 }
-.portfolio .inner .overlay{
+
+.portfolio .inner .overlay {
     top: 10px;
     right: 10px;
     bottom: 10px;
@@ -505,19 +564,22 @@ nav ul>li>.nav-link.active::after {
     opacity: 0;
     transition: 0.5s;
 }
-.portfolio .inner .overlay .icons i:hover{
+
+.portfolio .inner .overlay .icons i:hover {
     cursor: pointer;
     background-color: #fff !important;
     color: #111111 !important;
     border: 1px solid #111111;
     transition: 0.5s;
 }
-.portfolio .inner:hover .overlay{
+
+.portfolio .inner:hover .overlay {
     opacity: 1;
     transform: translateY(0px);
 }
+
 @media screen and (max-width:768px) {
-    .portfolio ul{
+    .portfolio ul {
         margin-left: 25px;
     }
 }
@@ -527,13 +589,15 @@ nav ul>li>.nav-link.active::after {
 
 
 /* ------------------------- End Portfolio ----------------- */
-.testimonial .inner{
+.testimonial .inner {
     width: 95%;
 }
-.testimonial .inner img{
+
+.testimonial .inner img {
     width: 90px;
     height: 90px;
 }
+
 .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;
@@ -544,76 +608,92 @@ nav ul>li>.nav-link.active::after {
 
 /* ------------------------- End Projects ----------------- */
 
-.projects .inner h3{
+.projects .inner h3 {
     font-weight: 900;
 }
 
 /* ------------------------- End Projects ----------------- */
 
 /* ------------------------- End Projects ----------------- */
-.team .inner{
+.team .inner {
     background-color: rgba(52, 52, 52, .8);
 }
-.team .inner img{
+
+.team .inner img {
     transition: 0.5s;
 }
-.team .inner .overlay{
+
+.team .inner .overlay {
     background-color: rgba(255, 255, 255, 0.95);
     inset: 10px;
     opacity: 0;
     transition: 0.5s;
     transform: rotateY(180deg) scale(0.5, 0.5);
 }
-.team .inner:hover .overlay{
+
+.team .inner:hover .overlay {
     opacity: 1;
     transform: rotateY(0deg) scale(1, 1);
 }
-.team .inner:hover img{
-    transform: scale(1.2,1.2);
+
+.team .inner:hover img {
+    transform: scale(1.2, 1.2);
 }
-.team .inner .overlay .icons{
-   top: 50px;
+
+.team .inner .overlay .icons {
+    top: 50px;
 }
-.team .inner .overlay .icons i{
+
+.team .inner .overlay .icons i {
     transition: 0.5s;
     font-size: 1.4rem;
-   cursor: pointer;
+    cursor: pointer;
 }
-.team .inner .overlay .icons i:hover{
-   background-color: #fff !important;
-   color: #111111;
+
+.team .inner .overlay .icons i:hover {
+    background-color: #fff !important;
+    color: #111111;
 }
+
 /* ------------------------- End Projects ----------------- */
 
 /* ------------------------- Start Contact ----------------- */
-.contact .inner:hover i{
+.contact .inner:hover i {
     background-color: #111 !important;
     transition: 0.5s;
     color: #fff !important;
 }
 
-.contact input , .contact textarea{
+.contact input,
+.contact textarea {
     background-color: #f4f4f4;
 }
-.contact input:focus , .contact textarea:focus{
+
+.contact input:focus,
+.contact textarea:focus {
     background-color: #f4f4f4 !important;
-   box-shadow: unset !important;
+    box-shadow: unset !important;
 }
-.contact input::placeholder , .contact textarea::placeholder{
+
+.contact input::placeholder,
+.contact textarea::placeholder {
     color: #748182;
     letter-spacing: 1px;
 }
-.contact button:hover{
+
+.contact button:hover {
     background-color: #fff !important;
     color: #111 !important;
     border: 1px solid #111;
 }
+
 /* ------------------------- End Contact ----------------- */
 
 /* ------------------------- End Contact ----------------- */
-footer{
-    background-color: #1c1c1c ;
+footer {
+    background-color: #1c1c1c;
 }
+
 /* ------------------------- End Contact ----------------- */
 
 
@@ -621,7 +701,7 @@ footer{
 
 
 @media screen and (max-width:1150px) {
-    .container{
+    .container {
         width: 95% !important;
     }
 }
