@@ -6,13 +6,7 @@ window.addEventListener("scroll", function () {
         document.getElementById("nav-scroll").classList.remove("second_nav");
     }
 });
+window.addEventListener("load", function () {
+    $(".loading").addClass("end").fadeOut(1000);
+});
 
-
-// window.addEventListener("scroll", function (event) {
-//     var scroll = this.scrollY;
-//     if (scroll > 150) {
-//         this.document.getElementById("up").style.display = "block";
-//     } else {
-//         this.document.getElementById("up").style.display = "none";
-//     }
-// });
