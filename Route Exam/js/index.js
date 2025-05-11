@@ -9,4 +9,3 @@ window.addEventListener("scroll", function () {
 window.addEventListener("load", function () {
     $(".loading").addClass("end").fadeOut(1000);
 });
-
